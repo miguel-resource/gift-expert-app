@@ -1,10 +1,9 @@
 import { useState } from "react"
-import { AddCategory } from './components/AddCategory.jsx'
-import  { GiftGrid } from './components/GiftGrid.jsx'
+import { AddCategory, GiftGrid } from './components'
 
 export const GiftExpertApp = () => {
 
-  const [categories, setCategories,] = useState(['One punch man', 'One piece'])
+  const [categories, setCategories,] = useState(['One punch man', ''])
   
   const addCategory = ( newCategory ) => {
     console.log(newCategory);
@@ -22,7 +21,6 @@ export const GiftExpertApp = () => {
         onNewCategory={ (event) => addCategory(event)}/>
 
       {/* Listado */}
-
       {
         categories.map(category => (
           <GiftGrid
@@ -31,6 +29,7 @@ export const GiftExpertApp = () => {
           />
         ))
       }  
+
 
     </>
   )
