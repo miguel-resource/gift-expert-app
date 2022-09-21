@@ -28,9 +28,7 @@ export const GiftExpertApp = () => {
             category={ category }
           />
         ))
-      }  
-
-
+      }
     </>
   )
 }

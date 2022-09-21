@@ -19,7 +19,7 @@ export const AddCategory = ({ onNewCategory }) => {
   }
 
   return (
-    <form onSubmit={ (event ) => onSubmitEvent( event)}>
+    <form aria-label='form' onSubmit={ (event ) => onSubmitEvent( event)}>
       <input
         type="text"
         placeholder="Buscar un gift"
